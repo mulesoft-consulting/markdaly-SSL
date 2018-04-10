@@ -17,5 +17,6 @@ http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/
         <set-payload value="#[&quot;Echo String&quot;]" doc:name="Set Payload"/>
         <logger message="#[payload]" level="INFO" doc:name="Logger"/>
         <logger level="INFO" doc:name="Logger1"/>
+        <logger level="INFO" doc:name="Logger2"/>
     </flow>
 </mule>

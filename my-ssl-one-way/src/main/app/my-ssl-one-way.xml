@@ -16,5 +16,6 @@ http://www.mulesoft.org/schema/mule/tls http://www.mulesoft.org/schema/mule/tls/
         <http:listener config-ref="HTTP_Listener_Configuration" path="/echo" doc:name="HTTP"/>
         <set-payload value="#[&quot;Echo String&quot;]" doc:name="Set Payload"/>
         <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <logger level="INFO" doc:name="Logger1"/>
     </flow>
 </mule>
